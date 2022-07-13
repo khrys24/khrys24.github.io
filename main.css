@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.line {
+    background-color: #ffc107;
+    height: 15px;
+}
+
+.top {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.reservation {
+    margin-left: 5%;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.reservation a {
+    text-decoration: none;
+    color: white;
+}
+
+.reservation a:hover {
+    color: #ffc107;
+}
+
+.socmed {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    margin-right: 5%;
+}
+
+.socmed img {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border-radius: 3px;
+}
+
+.nav {
+    margin-left: 5%;
+    height: 50px;
+}
+
+.nav li {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    margin: 7px;
+}
+
+.nav a:hover {
+    color: #ffc107;
+}
