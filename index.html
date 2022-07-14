@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lady Biker's Cafe</title>
-    <link rel="stylesheet" href="./main.css">
     <link rel="shortcut icon" href="./media/titlelogo.png" type="image/png">
     <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
     <div>
         <div class="header bg-dark text-white">
             <div class="line">    </div>
-            <header>
+            <header class="container">
                 <div class="top">
                     <div class="reservation">
                         <a href="#">For Reservations</a>
@@ -26,18 +26,58 @@
                         <a href="https://www.twitter.com" target="blank"><img src="./media/twitter-logo.png" alt="twitterlogo"></a>
                     </div>
                 </div>
-                <div class="nav">
-                    <nav>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Shop/Menu</a></li>
-                            <li><a href="#">About Us</a></li>
-                        </ul>
-                        <div>
-                            <input type="text" placeholder="Search">
-                            <input type="button" value="Search">
-                        </div>
-                    </nav>
+                <div class="row">
+                    <div class="nav col-lg-6">
+                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                            <div class="container-fluid">
+                                <a class="logo" target="blank" href="#">
+                                    <img src="./media/cafe-logo.png" alt="Cafe Logo">
+                                </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    About Us
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Our Locations</a></li>
+                                    <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Our Moto Vlogs</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Shop
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Drinks</a></li>
+                                    <li><a class="dropdown-item" href="#">Meals</a></li>
+                                    <li><a class="dropdown-item" href="#">Pasta</a></li>
+                                    <li><a class="dropdown-item" href="#">Pastries</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Motor Accessories</a></li>
+                                    <li><a class="dropdown-item" href="#">Motor Gears</a></li>
+                                    <li><a class="dropdown-item" href="#">Motor Jerseys</a></li>
+                                    </ul>
+                                </li>
+                                </ul>
+                            </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="topsearch col-lg-6 d-flex justify-content-end">
+                        <form class="search d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="button" type="submit">Search</button>
+                        </form>
+                    </div>
                 </div>
             </header>
         </div>
@@ -52,7 +92,7 @@
 
 
 
-        <div class="footer bg-warning">
+        <div class="footer">
             <footer>Footer</footer>
         </div>
     </div>
