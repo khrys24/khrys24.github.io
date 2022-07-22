@@ -12,6 +12,7 @@
 </head>
 <body>
     <div class="parentContainer">
+        <div id="gototop"> </div>
         <div class="header text-white sticky-top">
             <div id="line">    </div>
             <header class="container">
@@ -36,7 +37,7 @@
                 </div>
                 <div class="row">
                     <div class="nav col-lg-6">
-                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100">
                             <div class="container-fluid">
                                 <a class="logo" href="./index.html">
                                     <img src="./media/cafe-logo-removebg-preview.png" alt="Cafe Logo">
@@ -57,22 +58,22 @@
                                         <li><a class="dropdown-item" href="./location.html">Our Locations</a></li>
                                         <li><a class="dropdown-item" href="./contact.html">Contact Us</a></li>
                                         <li><hr class="dropdown-divider dividercolor"></li>
-                                        <li><a class="dropdown-item" href="#">Our Moto Vlogs</a></li>
+                                        <li><a class="dropdown-item" href="./motovlog.html">Our Moto Vlogs</a></li>
                                     </ul>
                                 </li>
                                 <li class="drpdwn nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-hover="dropdown" aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle" href="./shop.html" id="navbarDropdown" role="button" data-bs-hover="dropdown" aria-expanded="false">
                                         Shop
                                     </a>
                                     <ul class="dropdown-content dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="#">Drinks</a></li>
-                                        <li><a class="dropdown-item" href="#">Meals</a></li>
-                                        <li><a class="dropdown-item" href="#">Pasta</a></li>
-                                        <li><a class="dropdown-item" href="#">Pastries</a></li>
+                                        <li><a class="dropdown-item" href="./drinks.html">Drinks</a></li>
+                                        <li><a class="dropdown-item" href="./meals.html">Meals & Combos</a></li>
+                                        <li><a class="dropdown-item" href="./pasta.html">Pasta & Appetizers</a></li>
+                                        <li><a class="dropdown-item" href="./pastries.html">Pastries</a></li>
                                         <li><hr class="dropdown-divider dividercolor"></li>
-                                        <li><a class="dropdown-item" href="#">Motor Accessories</a></li>
-                                        <li><a class="dropdown-item" href="#">Motor Gears</a></li>
-                                        <li><a class="dropdown-item" href="#">Motor Jerseys</a></li>
+                                        <li><a class="dropdown-item" href="./accessories.html">Motor Accessories</a></li>
+                                        <li><a class="dropdown-item" href="./gears.html">Rider Gears</a></li>
+                                        <li><a class="dropdown-item" href="./jersey.html">Motor Jerseys</a></li>
                                     </ul>
                                 </li>
                                 </ul>
@@ -81,7 +82,7 @@
                         </nav>
                     </div>
                     <div class="topsearch col-lg-6 d-flex justify-content-end">
-                        <form class="search d-flex" role="search">
+                        <form class="search d-lg-flex d-sm-none d-none" role="search">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                             <button class="button" type="submit">Search</button>
                         </form>
@@ -90,31 +91,63 @@
             </header>
         </div>
        
-        <div class="bodyContainer d-flex flex-column justify-content-center">
-            <div class="container">
+        <div class="bodyContainer d-flex flex-column">
+            <div class="container-lg">
                 <div class="row justify-content-center">
-                    <div class="locHeader col-lg-8">
+                    <div class="locHeader col-12 d-flex flex-wrap flex-column">
                         <h1 id="headerh1">Our Biker's Cafe Branches<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
                           </svg>
                         </h1>
                     </div>
                 </div>
-            </div>
+                
+                <div class="row justify-content-center m-5">
+                    <div class="motovlog col-lg-6">
+                        <p class="motovlog-intro">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                            <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
+                            </svg>
+                            Don Salbador Benedicto, Negros Occidental
+                        </p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125507.51279554282!2d123.17699150006531!3d10.570582229874175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a930436907f0a7%3A0x8280a70c760b8d44!2sDon%20Salvador%20Benedicto%2C%20Negros%20Occidental!5e0!3m2!1sen!2sph!4v1658134711797!5m2!1sen!2sph" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
 
-            <div class="container locations">
-                <div class="row">
-                    <p class="locationsP">Lady Biker's Cafe currently has 4 outlets. You can find us at the following locations below:</p>
-                    <ul>
-                        <li>Don Salbador Benedicto, Negros Occidental</li>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125507.51279554282!2d123.17699150006531!3d10.570582229874175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a930436907f0a7%3A0x8280a70c760b8d44!2sDon%20Salvador%20Benedicto%2C%20Negros%20Occidental!5e0!3m2!1sen!2sph!4v1658134711797!5m2!1sen!2sph" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <li>Sta. Barbara Villas, San Mateo, Brgy. Silangan, Rizal</li>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.7764762075712!2d121.14292601744387!3d14.668622700000011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397bbdfe53ef103%3A0xbca8407baa8d9529!2sSta%20Barbara%20Villas%201!5e0!3m2!1sen!2sph!4v1658135390873!5m2!1sen!2sph" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <li>Governor's Dr, Carmona, Cavite</li>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3866.0411450370184!2d121.03050191475565!3d14.309042189988732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d768634c8ae5%3A0x37b62d5405e67ab3!2sGovernor&#39;s%20Dr%2C%20Carmona%2C%20Cavite!5e0!3m2!1sen!2sph!4v1658135735537!5m2!1sen!2sph" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <li>Silang Junction South, Tagaytay, Cavite</li>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9541.475933878937!2d120.95223428540429!3d14.109510948160777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd776f90319d5b%3A0xcd06fa8dfe85672b!2sSilang%20Junction%20South%2C%20Tagaytay%2C%20Cavite!5e0!3m2!1sen!2sph!4v1658142967810!5m2!1sen!2sph" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </ul>
+                <div class="row justify-content-center m-5">
+                    <div class="motovlog col-lg-6">
+                        <p class="motovlog-intro">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                            <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
+                            </svg>
+                            Sta. Barbara Villas, San Mateo, Brgy. Silangan, Rizal
+                        </p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.7764762075712!2d121.14292601744387!3d14.668622700000011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397bbdfe53ef103%3A0xbca8407baa8d9529!2sSta%20Barbara%20Villas%201!5e0!3m2!1sen!2sph!4v1658135390873!5m2!1sen!2sph" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center m-5">
+                    <div class="motovlog col-lg-6">
+                        <p class="motovlog-intro">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                            <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
+                            </svg>
+                            Governor's Dr, Carmona, Cavite
+                        </p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3866.0411450370184!2d121.03050191475565!3d14.309042189988732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d768634c8ae5%3A0x37b62d5405e67ab3!2sGovernor&#39;s%20Dr%2C%20Carmona%2C%20Cavite!5e0!3m2!1sen!2sph!4v1658135735537!5m2!1sen!2sph" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center m-5">
+                    <div class="motovlog col-lg-6">
+                        <p class="motovlog-intro">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                            <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
+                            </svg>
+                            Silang Junction South, Tagaytay, Cavite
+                        </p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9541.475933878937!2d120.95223428540429!3d14.109510948160777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd776f90319d5b%3A0xcd06fa8dfe85672b!2sSilang%20Junction%20South%2C%20Tagaytay%2C%20Cavite!5e0!3m2!1sen!2sph!4v1658142967810!5m2!1sen!2sph" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -122,7 +155,7 @@
         <footer class="footer container-fluid">
             <div id="backtop" class="row text-center">
                 <div class="col-lg-12">
-                    <a href="#headerh1">Go to top page <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                    <a href="#gototop">Go to top page <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
                         </svg>
                     </a>
@@ -133,12 +166,12 @@
                     <img src="./media/cafe-logo.png" alt="cafelogo">
                 </div>
                 <div class="col-lg-6">
-                    <p>One of the most Instagrammable Coffee Shop in the Philippines with natural natures view and friendly service crews. Serving coffee, affordable and delicious foods since Pandemic. <br>
+                    <p>One of the most Instagrammable Coffee Shop in the Philippines with natures view and friendly service crews. Serving coffee, affordable and delicious foods. <br>
                         Lady Biker's Cafe is not just an ordinary cafe, besides our best-tasting food meals we also have pastries and pasta that you'll surely love.</p>
                 </div>
             </div>
             <div class="since">
-                <p>Lady Biker's Cafe serving since the Pandemic 2020 <br>
+                <p>Lady Biker's Cafe serving since the 2020 <br>
                     Created by <a href="https://www.facebook.com/khrysyellow24/" target="blank">Khrytine Icah C. Masiglat </a> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-wink" viewBox="0 0 16 16">
                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                         <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm1.757-.437a.5.5 0 0 1 .68.194.934.934 0 0 0 .813.493c.339 0 .645-.19.813-.493a.5.5 0 1 1 .874.486A1.934 1.934 0 0 1 10.25 7.75c-.73 0-1.356-.412-1.687-1.007a.5.5 0 0 1 .194-.68z"/>

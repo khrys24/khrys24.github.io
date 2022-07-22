@@ -12,6 +12,7 @@
 </head>
 <body>
     <div class="parentContainer">
+        <div id="gototop"> </div>
         <div class="header text-white sticky-top">
             <div id="line">    </div>
             <header class="container">
@@ -36,7 +37,7 @@
                 </div>
                 <div class="row">
                     <div class="nav col-lg-6">
-                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100">
                             <div class="container-fluid">
                                 <a class="logo" href="./index.html">
                                     <img src="./media/cafe-logo-removebg-preview.png" alt="Cafe Logo">
@@ -57,22 +58,22 @@
                                         <li><a class="dropdown-item" href="./location.html">Our Locations</a></li>
                                         <li><a class="dropdown-item" href="./contact.html">Contact Us</a></li>
                                         <li><hr class="dropdown-divider dividercolor"></li>
-                                        <li><a class="dropdown-item" href="#">Our Moto Vlogs</a></li>
+                                        <li><a class="dropdown-item" href="./motovlog.html">Our Moto Vlogs</a></li>
                                     </ul>
                                 </li>
                                 <li class="drpdwn nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-hover="dropdown" aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle" href="./shop.html" id="navbarDropdown" role="button" data-bs-hover="dropdown" aria-expanded="false">
                                         Shop
                                     </a>
                                     <ul class="dropdown-content dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="#">Drinks</a></li>
-                                        <li><a class="dropdown-item" href="#">Meals</a></li>
-                                        <li><a class="dropdown-item" href="#">Pasta</a></li>
-                                        <li><a class="dropdown-item" href="#">Pastries</a></li>
+                                        <li><a class="dropdown-item" href="./drinks.html">Drinks</a></li>
+                                        <li><a class="dropdown-item" href="./meals.html">Meals & Combos</a></li>
+                                        <li><a class="dropdown-item" href="./pasta.html">Pasta & Appetizers</a></li>
+                                        <li><a class="dropdown-item" href="./pasta.html">Pastries</a></li>
                                         <li><hr class="dropdown-divider dividercolor"></li>
-                                        <li><a class="dropdown-item" href="#">Motor Accessories</a></li>
-                                        <li><a class="dropdown-item" href="#">Motor Gears</a></li>
-                                        <li><a class="dropdown-item" href="#">Motor Jerseys</a></li>
+                                        <li><a class="dropdown-item" href="./accessories.html">Motor Accessories</a></li>
+                                        <li><a class="dropdown-item" href="./gears.html">Rider Gears</a></li>
+                                        <li><a class="dropdown-item" href="./jersey.html">Motor Jerseys</a></li>
                                     </ul>
                                 </li>
                                 </ul>
@@ -81,7 +82,7 @@
                         </nav>
                     </div>
                     <div class="topsearch col-lg-6 d-flex justify-content-end">
-                        <form class="search d-flex" role="search">
+                        <form class="search d-lg-flex d-sm-none d-none" role="search">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                             <button class="button" type="submit">Search</button>
                         </form>
@@ -121,56 +122,133 @@
                     </div>
                     <div class="contactInfo col-lg-3">
                         <div class="socmedBox">
-                            <a href="https://www.facebook.com/khrysyellow24/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-facebook m-2" viewBox="0 0 16 16">
-                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                            <a href="https://www.facebook.com/khrysyellow24/" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-facebook m-2" viewBox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
                                 </svg>
                             </a>
-                            <a href="https://m.me/khrysyellow24"></a><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-messenger" viewBox="0 0 16 16">
-                                <path d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.639.639 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.639.639 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76zm5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z"/>
-                            </svg>
+                            <a href="https://m.me/khrysyellow24" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-messenger" viewBox="0 0 16 16">
+                                    <path d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.639.639 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.639.639 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76zm5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z"/>
+                                </svg>
+                            </a>
                         </div>
                         <p>Our Social Media</p>
                     </div>
                 </div>
             </div>
+
+
+            <form class="container d-flex flex-column justify-content-center formbox">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="view-heightPar">You're welcome to send us a message</h2>
+                    </div>
+    
+                    <div class="col-12">
+                        <label for="full_name">Full Name:</label>
+                    </div>
+    
+                    <div class="col-12">
+                        <input type="text" name="fullname" id="full_name">
+                    </div>
+    
+                    <div class="col-12">
+                        <label for="email">Email:</label>
+                    </div>
+    
+                    <div class="col-12">
+                        <input type="text" name="Email" id="email" required>
+                    </div>
+    
+                    <div class="col-12">
+                        <label for="message">Enter your message for us:</label>
+                    </div>
+    
+                    <div class="col-12">
+                        <textarea name="message" id="message" rows="4"></textarea>
+                    </div>
+    
+                    <div class="col-12">
+                        <input type="submit" value="Send Message">
+                    </div>
+    
+                </div>
+            </form>
             <div class="container">
-                <div class="row subsbox">
-                    <div class="formbox col-lg-6">
-                        <h2>You're welcome to send us a message</h2>
-                        <form class="sendMessage">
-                            <table>
-                                 <tr>
-                                    <td><label for="full_name">Full Name:</label></td>
-                                    <td><input type="text" name="fullname" id="full_name"></td>
-                                 </tr>
-                                 <tr>
-                                    <td><label for="email">Email:</label></td>
-                                    <td><input type="text" name="Email" id="email" required></td>
-                                 </tr>
-                                 <tr>
-                                    <td colspan="2"><label for="message">Enter your message for us:</label></td>
-                                 </tr>
-                                 <tr>
-                                    <td colspan="2">
-                                        <textarea name="message" id="message" cols="50" rows="5"></textarea>
-                                    </td>
-                                 </tr>
-                                 <tr>
-                                    <td colspan="2">
-                                        <input type="submit" value="Send Message">
-                                    </td>
-                                 </tr>
-                            </table>
-                        </form>
+                <div class="row justify-content-center">
+                    <h2 class="FAQpr">
+                        How can we help you?
+                    </h2>
+                    <div class="col-lg-9">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="fw-bold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                  What are your store hours?
+                                </button>
+                              </h2>
+                              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Biker's Cafe regular store hours are from 6:00 AM to 1:00 AM on all branches.</div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="fw-bold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                  Is there Wi-Fi in Lady Biker's Cafe?
+                                </button>
+                              </h2>
+                              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Yes, Wi-Fi access is given to the customers for two (2) hours upon ordering.</div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="fw-bold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                  Where is Lady Biker's Cafe located?
+                                </button>
+                              </h2>
+                              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Currently our Biker's Cafe has 4 branches. You may visit us at the following locations below:
+                                    <ul>
+                                        <li>Don Salbador Benedicto, Negros Occidental (Main)</li>
+                                        <li>Sta. Barbara Villas, San Mateo, Brgy. Silangan, Rizal</li>
+                                        <li>Governor's Dr, Carmona, Cavite</li>
+                                        <li>Silang Junction South, Tagaytay, Cavite</li>
+                                    </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFour">
+                                  <button class="fw-bold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                    Do you Deliver?
+                                  </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                  <div class="accordion-body">
+                                    Yes we deliver. We accept order through our delivery partner apps:
+                                    <ul>
+                                        <li>Angkas App</li>
+                                        <li>Grab App</li>
+                                        <li>Food Panda</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
                     </div>
                 </div>
             </div>
+
+
         </div>
 
         <footer class="footer container-fluid">
             <div id="backtop" class="row text-center">
                 <div class="col-lg-12">
-                    <a href="#headerh1">Go to top page <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                    <a href="#gototop">Go to top page <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
                         </svg>
                     </a>
@@ -181,12 +259,12 @@
                     <img src="./media/cafe-logo.png" alt="cafelogo">
                 </div>
                 <div class="col-lg-6">
-                    <p>One of the most Instagrammable Coffee Shop in the Philippines with natural natures view and friendly service crews. Serving coffee, affordable and delicious foods since Pandemic. <br>
+                    <p>One of the most Instagrammable Coffee Shop in the Philippines with natures view and friendly service crews. Serving coffee, affordable and delicious foods. <br>
                         Lady Biker's Cafe is not just an ordinary cafe, besides our best-tasting food meals we also have pastries and pasta that you'll surely love.</p>
                 </div>
             </div>
             <div class="since">
-                <p>Lady Biker's Cafe serving since the Pandemic 2020 <br>
+                <p>Lady Biker's Cafe serving since 2020 <br>
                     Created by <a href="https://www.facebook.com/khrysyellow24/" target="blank">Khrytine Icah C. Masiglat </a> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-wink" viewBox="0 0 16 16">
                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                         <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm1.757-.437a.5.5 0 0 1 .68.194.934.934 0 0 0 .813.493c.339 0 .645-.19.813-.493a.5.5 0 1 1 .874.486A1.934 1.934 0 0 1 10.25 7.75c-.73 0-1.356-.412-1.687-1.007a.5.5 0 0 1 .194-.68z"/>

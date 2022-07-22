@@ -96,8 +96,12 @@ body {
     color: #F8DF8B;
 }
 
+.logo {
+    max-width: 50%;
+}
+
 .logo img {
-    width: 300px;
+    width: 100%;
     height: 100px;
 }
 
@@ -105,6 +109,10 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+.bodyContainer {
+    margin-bottom: 5%;
 }
 
 #headerh1 {
@@ -123,7 +131,10 @@ body {
 }
 
 .subsbox {
+    display: flex;
+    align-self: center;
     margin: 50px;
+    width: 100%;
 }
 
 .formbox {
@@ -137,6 +148,21 @@ body {
     border-radius: 5px;
 }
 
+.formbox .row {
+    width: 90%;
+}
+
+.formbox input[type="text"] {
+    width: 100%;
+}
+
+/* .formbox input[type=submit] {
+    /* width: 30%; */
+
+.view-heightPar {
+    font-size: 5vh;
+}
+
 .aboutusIntro {
     color: #F8DF8B;
     padding-top: 30px;
@@ -148,12 +174,12 @@ body {
 }
 
 .firstLocationImg img {
-    width: 845px;
+    width: 100%;
     height: 300px;
 }
 
 .khiraImg img {
-    width: 400px;
+    width: 100%;
     height: 700px;
 }
 
@@ -179,6 +205,22 @@ body {
 .locations li {
     color: #F8DF8B;
     margin-top: 50px;
+}
+
+.subscribe-btn {
+    margin: auto auto;
+    display: block;
+    margin-top: 5px;
+}
+
+.subsbox .sub-input {
+    width: 100%;
+}
+
+.sub-input input[type="text"] {
+    width: 50% !important;
+    display: block;
+    margin: auto;
 }
 
 .contactInfo {
@@ -210,11 +252,65 @@ body {
 }
 
 .sendMessage table input[type="submit"] {
-    background-color: #555151;
+    background-color: gray;
     color: #f8df8b;
     border: none;
     border-radius: 5px;
     height: 35px;
+}
+
+.FAQpr {
+    color: #F8DF8B;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.header-bg-img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://images.unsplash.com/photo-1518832553480-cd0e625ed3e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80&fbclid=IwAR01nzAEKVBPA0mrPtTiEiZS0QX6goTWVwMgVHPKG7IZyrn_eytfLnpkpww);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 250px;
+    width: 100%;
+}
+
+#header-h1-menu {
+    font-size: 11vh;
+    color: #212529;
+    font-family: papyrus;
+    padding: 10px;
+    text-shadow: 2px 2px rgb(248, 223, 139);
+}
+
+.wrapper {
+    /* max-width: 24%; */
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    border: 1px solid #f8df8b;
+    margin-top: 10px;
+    color: #f8df8b;
+}
+
+.wrapper p {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 2.5vh;
+}
+
+.wrapper img {
+    width: 100%;
+    height: 250px;
+}
+
+.motovlog-intro {
+    color: #F8DF8B;
+    text-align: center;
 }
 
 .footer {
@@ -222,12 +318,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 300px;
 }
 
-#backtop {
+/* #backtop {
     align-content: flex-start;
-}
+} */
 
 #backtop a {
     color: black;
@@ -251,4 +346,29 @@ body {
 .since {
     font-size: x-small;
     padding-left: 240px;
+}
+
+.formbox textarea {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .sendMessage table {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 991px) {   
+    .khiraImg {
+        display: flex;
+        justify-content: center;
+    }
+
+    .khiraImg img {
+        width: 80%;
+    }
+    
+    .footerimg {
+        margin-bottom: 25px;
+    }
 }
