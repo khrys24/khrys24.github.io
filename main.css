@@ -345,7 +345,17 @@ body {
 
 .since {
     font-size: x-small;
-    padding-left: 240px;
+    width: 40%;
+    margin: auto;
+    display: block;
+    margin-bottom: 15px;
+    /* padding-left: 240px; */
+}
+
+.since p {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0px;
 }
 
 .formbox textarea {
@@ -370,5 +380,11 @@ body {
     
     .footerimg {
         margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .since {
+        width: 65%;
     }
 }
