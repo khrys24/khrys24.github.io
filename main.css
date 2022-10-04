@@ -349,11 +349,19 @@ body {
     margin-top: 5%;
 }
 
+.menu {
+    margin-bottom: 5%;
+}
+
 .footer {
     background-color: #F8DF8B;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+#backtop {
+    margin-top: 15px;
 }
 
 #backtop a {
